@@ -893,7 +893,7 @@
             <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 12,
+        amountOfImages: 11,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1067,23 +1067,6 @@
                     <button @click="activeImage = 9; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/fe357acc-b82b-4348-af9b-76cdb314ab38.jpeg" alt="Landscaping for Lovell’s Landscaping in Acworth, GA" loading="lazy"/>
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 10; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3f821d08-6167-4247-9c55-a22d4416c9ff.jpeg" alt="Landscaping for Lovell’s Landscaping in Acworth, GA" loading="lazy"/>
                             
                         </div>
@@ -1098,7 +1081,7 @@
         
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 11; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 10; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a16c3d26-ad9e-4ae8-abdb-ef246cb31b63.jpeg" alt="Landscaping for Lovell’s Landscaping in Acworth, GA" loading="lazy"/>
@@ -1221,19 +1204,12 @@
                                 
                                     <li class="flex flex-col" x-show="activeImage === 9">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fe357acc-b82b-4348-af9b-76cdb314ab38.jpeg" alt="Landscaping for Lovell’s Landscaping in Acworth, GA" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <li class="flex flex-col" x-show="activeImage === 10">
-                                            
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3f821d08-6167-4247-9c55-a22d4416c9ff.jpeg" alt="Landscaping for Lovell’s Landscaping in Acworth, GA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
-                                    <li class="flex flex-col" x-show="activeImage === 11">
+                                    <li class="flex flex-col" x-show="activeImage === 10">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a16c3d26-ad9e-4ae8-abdb-ef246cb31b63.jpeg" alt="Landscaping for Lovell’s Landscaping in Acworth, GA" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
