@@ -934,7 +934,7 @@
     <div
         x-data="{
         activeImage: 1,
-        amountOfImages: 3,
+        amountOfImages: 5,
         loop() {
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
@@ -956,7 +956,7 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/35e8a996-051c-42ce-855c-aff5c03eb7a5.jpeg"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/YZNAV17BOSB2NIIO4A5AWDW51PLAFVKLU44UNW85.jpeg"
                     alt="Landscaping company Lovell’s Landscaping, LLC in Acworth, GA"
                 />
             
@@ -975,7 +975,7 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/c8164893-cc87-48ab-a962-b635dcfc4570.jpeg"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X7HX3XW5MIWI4MWM9Q605ITK2SXF4JZ9XYYDIUB3.jpeg"
                     alt="Landscaping company Lovell’s Landscaping, LLC in Acworth, GA"
                 />
             
@@ -984,6 +984,44 @@
         <div
             class="absolute inset-0"
             x-show="activeImage === 3"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            
+                <img
+                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/G694ZDB92Z1775ZXTQB4L4MK1PKITFGV33Z1SBRB.jpeg"
+                    alt="Landscaping company Lovell’s Landscaping, LLC in Acworth, GA"
+                />
+            
+        </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 4"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            
+                <img
+                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0ce5eacb-5bd2-453f-8484-f85cdc54fb19.jpeg"
+                    alt="Landscaping company Lovell’s Landscaping, LLC in Acworth, GA"
+                />
+            
+        </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 5"
             x-transition:enter="transition duration-1000"
             x-transition:enter-start="transform translate-x-full"
             x-transition:enter-end="transform translate-x-0"
